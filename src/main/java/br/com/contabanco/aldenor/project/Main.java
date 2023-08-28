@@ -35,6 +35,7 @@ public class Main {
         System.out.println("Olá "+contaTerminal.getClientName()+
                 ", obrigado por criar uma conta em nosso banco, sua agência é " +
                 contaTerminal.getAgencia()+", conta "+contaTerminal.getNumber()+" e seu saldo "+contaTerminal.getBalance()+" já está disponível para saque.");
+        scanner.close();
     }
 
     public static boolean isNumberInt(String numberString) {
