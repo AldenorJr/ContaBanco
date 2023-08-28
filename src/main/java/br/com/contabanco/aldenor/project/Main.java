@@ -9,12 +9,15 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Por favor informe o número da conta.");
+
         ContaTerminal contaTerminal = new ContaTerminal();
+
         while (contaTerminal.getNumber() == null) {
             String number = scanner.next();
             if (isNumberInt(number)) contaTerminal.setNumber(Integer.parseInt(number));
             else System.out.println("Por favor, informe o número da conta, lembrando, apenas números são permitidos.");
         }
+
         System.out.println("Por favor, informe o seu nome.");
         String nome = scanner.next();
         contaTerminal.setClientName(nome);
